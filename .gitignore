@@ -1,9 +1,9 @@
 /node_modules
-/public/build
+# /public/build
 /public/hot
 /public/storage
-/public/assets
-/public/mix-manifest.json
+# /public/assets
+# /public/mix-manifest.json
 /storage/*.key
 /vendor
 .env
@@ -16,3 +16,4 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+composer.lock
