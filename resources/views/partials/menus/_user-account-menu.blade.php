@@ -30,7 +30,9 @@
     <!--end::Menu separator-->
     <!--begin::Menu item-->
     <div class="menu-item px-5">
-        <a href="#" class="menu-link px-5">My Profile</a>
+    <!-- Route::resource('/profile-view', ProfilePageController::class); -->
+
+        <a href="" class="menu-link px-5">My Profile</a>
     </div>
     <!--end::Menu item-->
 

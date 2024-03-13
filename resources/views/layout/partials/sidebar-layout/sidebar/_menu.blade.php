@@ -28,159 +28,85 @@
 			</div>
 			<!--end:Menu item-->
 			<!--begin:Menu item-->
-			<div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ request()->routeIs('user-management.*') ? 'here show' : '' }}">
+			<div data-kt-menu-trigger="click" class="menu-item ">
 				<!--begin:Menu link-->
-				<span class="menu-link">
-					<span class="menu-icon">{!! getIcon('abstract-28', 'fs-2') !!}</span>
+				<a href="{{ route('user-management.index') }}" class="menu-link">
+					<span class="menu-icon" >
+					<i class="ki-duotone ki-user" style="font-size: 25px;">
+					<span class="path1"></span>
+					<span class="path2"></span>
+					</i>
+					</span>
 					<span class="menu-title">User Management</span>
-					<span class="menu-arrow"></span>
-				</span>
+				</a>
 				<!--end:Menu link-->
-				<!--begin:Menu sub-->
-				<div class="menu-sub menu-sub-accordion">
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.users.*') ? 'active' : '' }}" href="{{ route('user-management.users.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Users</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.roles.*') ? 'active' : '' }}" href="{{ route('user-management.roles.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Roles</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.permissions.*') ? 'active' : '' }}" href="{{ route('user-management.permissions.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Permissions</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-				</div>
-				<!--end:Menu sub-->
 			</div>
 			<!--end:Menu item-->
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ request()->routeIs('user-management.*') ? 'here show' : '' }}">
+
+			<!--begin:Menu item-->
+			<div data-kt-menu-trigger="click" class="menu-item">
 				<!--begin:Menu link-->
-				<span class="menu-link">
-					<span class="menu-icon">{!! getIcon('abstract-28', 'fs-2') !!}</span>
+				<a href="{{ route('group-management.index') }}" class="menu-link">
+					<span class="menu-icon" >
+					<i class="ki-duotone ki-people" style="font-size: 25px;">
+						<span class="path1"></span>
+						<span class="path2"></span>
+						<span class="path3"></span>
+						<span class="path4"></span>
+						<span class="path5"></span>
+					</i>
+					</span>
 					<span class="menu-title">Group Management</span>
-					<span class="menu-arrow"></span>
-				</span>
+				</a>
 				<!--end:Menu link-->
-				<!--begin:Menu sub-->
-				<div class="menu-sub menu-sub-accordion">
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.users.*') ? 'active' : '' }}" href="{{ route('user-management.users.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Users</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.roles.*') ? 'active' : '' }}" href="{{ route('user-management.roles.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Roles</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.permissions.*') ? 'active' : '' }}" href="{{ route('user-management.permissions.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Permissions</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-				</div>
-				<!--end:Menu sub-->
 			</div>
-			<!--end:Menu item-->
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion {{ request()->routeIs('user-management.*') ? 'here show' : '' }}">
+			<!--end:Menu item-->		
+			<!--begin:Menu item-->
+			<div data-kt-menu-trigger="click" class="menu-item">
 				<!--begin:Menu link-->
-				<span class="menu-link">
-					<span class="menu-icon">{!! getIcon('abstract-28', 'fs-2') !!}</span>
-					<span class="menu-title">Album Management</span>
-					<span class="menu-arrow"></span>
-				</span>
+				<a href="{{ route('box-setting.index') }}" class="menu-link">
+					<span class="menu-icon">
+						<i class="ki-duotone ki-setting-4" style="font-size: 25px;">
+						</i></span>
+					<span class="menu-title">Box Setting</span>
+				</a>
 				<!--end:Menu link-->
-				<!--begin:Menu sub-->
-				<div class="menu-sub menu-sub-accordion">
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.users.*') ? 'active' : '' }}" href="{{ route('user-management.users.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Users</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.roles.*') ? 'active' : '' }}" href="{{ route('user-management.roles.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Roles</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-					<!--begin:Menu item-->
-					<div class="menu-item">
-						<!--begin:Menu link-->
-						<a class="menu-link {{ request()->routeIs('user-management.permissions.*') ? 'active' : '' }}" href="{{ route('user-management.permissions.index') }}">
-							<span class="menu-bullet">
-								<span class="bullet bullet-dot"></span>
-							</span>
-							<span class="menu-title">Permissions</span>
-						</a>
-						<!--end:Menu link-->
-					</div>
-					<!--end:Menu item-->
-				</div>
-				<!--end:Menu sub-->
+			</div>
+			<!--end:Menu item-->	
+			<!--begin:Menu item-->
+			<div data-kt-menu-trigger="click" class="menu-item">
+				<!--begin:Menu link-->
+				<a href="{{ route('news-management.index') }}" class="menu-link">
+					<span class="menu-icon">
+					<i class="ki-duotone ki-document" style="font-size: 25px;">
+					<span class="path1"></span>
+					<span class="path2"></span>
+					</i>
+				</span>
+					<span class="menu-title">News Management</span>
+				</a>
+				<!--end:Menu link-->
 			</div>
 			<!--end:Menu item-->
-			
+			<!--begin:Menu item-->
+			<div data-kt-menu-trigger="click" class="menu-item">
+				<!--begin:Menu link-->
+				<a href="{{ route('currency-change.index') }}" class="menu-link">
+					<span class="menu-icon">
+					<i class="ki-duotone ki-bill" style="font-size: 25px;">
+					<span class="path1"></span>
+					<span class="path2"></span>
+					<span class="path3"></span>
+					<span class="path4"></span>
+					<span class="path5"></span>
+					<span class="path6"></span>
+					</i>
+				</span>
+					<span class="menu-title">Currency Change</span>
+				</a>
+				<!--end:Menu link-->
+			</div>
+			<!--end:Menu item-->
 		</div>
 		<!--end::Menu-->
 	</div>

@@ -7,7 +7,7 @@
 			<!--begin:Col-->
 			<div class="col-lg-3 mb-6 mb-lg-0">
 				<!--begin:Menu heading-->
-				<h4 class="fs-6 fs-lg-4 fw-bold mb-3 ms-4">User Profile</h4>
+				<h4 class="fs-6 fs-lg-4 fw-bold mb-3 ms-4">User Profile this is a very long text</h4>
 				<!--end:Menu heading-->
 				<!--begin:Menu item-->
 				<div class="menu-item p-0 m-0">

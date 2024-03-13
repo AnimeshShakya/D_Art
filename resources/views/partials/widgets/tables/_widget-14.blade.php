@@ -4,7 +4,7 @@
 	<div class="card-header pt-7">
 		<!--begin::Title-->
 		<h3 class="card-title align-items-start flex-column">
-			<span class="card-label fw-bold text-gray-800">Projects Stats</span>
+			<span class="card-label fw-bold text-gray-800">Offices</span>
 			<span class="text-gray-500 mt-1 fw-semibold fs-6">Updated 37 minutes ago</span>
 		</h3>
 		<!--end::Title-->
@@ -24,7 +24,7 @@
 				<!--begin::Table head-->
 				<thead>
 					<tr class="fs-7 fw-bold text-gray-500 border-bottom-0">
-						<th class="p-0 pb-3 min-w-175px text-start">ITEM</th>
+						<th class="p-0 pb-3 min-w-175px text-start">OFFICES</th>
 						<th class="p-0 pb-3 min-w-100px text-end">BUDGET</th>
 						<th class="p-0 pb-3 min-w-100px text-end">PROGRESS</th>
 						<th class="p-0 pb-3 min-w-175px text-end pe-12">STATUS</th>
@@ -39,11 +39,11 @@
 						<td>
 							<div class="d-flex align-items-center">
 								<div class="symbol symbol-50px me-3">
-									<img src="{{ image('stock/600x600/img-49.jpg') }}" class="" alt="" />
+									<img src="" class="" alt="" />
 								</div>
 								<div class="d-flex justify-content-start flex-column">
-									<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Mivy App</a>
-									<span class="text-gray-500 fw-semibold d-block fs-7">Jane Cooper</span>
+									<a href="#" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">Head Office</a>
+									<span class="text-gray-500 fw-semibold d-block fs-7">location</span>
 								</div>
 							</div>
 						</td>

@@ -5,24 +5,35 @@ namespace App\Http\Controllers\Apps;
 use App\DataTables\UsersDataTable;
 use App\Http\Controllers\Controller;
 use App\Models\User;
-use Illuminate\Http\Request;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class UserManagementController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(UsersDataTable $dataTable)
+    // public function index(UsersDataTable $dataTable)
+    public function index()
     {
-        return $dataTable->render('pages/apps.user-management.users.list');
+        // Pagination 25 is prior 
+        $users = User::Paginate(25);
+
+
+        return view('pages.apps.user-management.index', ['users' => $users]);
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function add()
     {
-        //
+        // return view('pages/apps.user-management.view', compact('user'));
+        return view('pages/apps.user-management.add');
     }
 
     /**
@@ -38,7 +49,8 @@ class UserManagementController extends Controller
      */
     public function show(User $user)
     {
-        return view('pages/apps.user-management.users.show', compact('user'));
+        // return view('pages/apps.user-management.view', compact('user'));
+        return view('pages/apps.user-management.view');
     }
 
     /**
@@ -46,7 +58,7 @@ class UserManagementController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        return view('pages/apps.user-management.edit');
     }
 
     /**
@@ -63,5 +75,11 @@ class UserManagementController extends Controller
     public function destroy(User $user)
     {
         //
+    }
+
+
+    public function viewGroup()
+    {
+        return view('pages/apps.user-management.viewGroup');
     }
 }
