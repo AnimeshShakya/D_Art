@@ -18,7 +18,7 @@ export function HeroSection() {
               Say goodbye to interruptions and enjoy uninterrupted music streaming. With our ad-free platform, you'll have access to millions of songs.
             </p>
             <Button className="bg-[#D81B60] hover:bg-[#C2185B] text-white px-8 py-6 text-lg rounded-md">
-              Sign Up
+              Explore
             </Button>
           </div>
           

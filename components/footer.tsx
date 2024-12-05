@@ -50,7 +50,7 @@ export function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-white font-semibold mb-6">Pride</h3>
+            <h3 className="text-white font-semibold mb-6">ChitraKar</h3>
             <ul className="space-y-3">
               {['Features', 'Careers', 'Press'].map((item) => (
                 <li key={item}>
