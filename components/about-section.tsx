@@ -31,8 +31,8 @@ export function AboutSection() {
               </span>
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Don&apos;t miss out on the  exclusive offers and
-              promotions. East or West Bibek&apos;s the best!
+              Dont miss out on the  exclusive offers and
+              promotions. East or West Bibek is the best!
             </p>
             
             <form onSubmit={handleSubmit} className="space-y-4">
