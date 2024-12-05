@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import Image from 'next/image'
 
 export function CategoriesSection() {
   return (
@@ -16,7 +17,7 @@ export function CategoriesSection() {
               <span className="text-gray-400">Art Categories</span>
             </h2>
             <p className="text-gray-400">
-              Say goodbye to interruptions and enjoy uninterrupted music streaming. With our ad-free platform, you'll have access to millions of songs
+              Say goodbye to interruptions and enjoy uninterrupted music streaming. With our ad-free platform, you&apos;ll have access to millions of songs
             </p>
           </div>
           
@@ -48,11 +49,13 @@ export function CategoriesSection() {
             { title: "Anime Art", image: "/28.jpg" }
           ].map((category, index) => (
             <div key={index} className="group relative overflow-hidden rounded-3xl">
-              <div className="aspect-[4/5] relative">
-                <img
+              <div className="relative w-full h-[300px]">
+                <Image
                   src={category.image}
                   alt={category.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  width={600}
+                  height={300}
+                  className="w-full h-full object-cover rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">

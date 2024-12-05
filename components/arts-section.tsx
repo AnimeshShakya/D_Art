@@ -13,7 +13,7 @@ export function ArtsSection() {
             <span className="text-gray-400">Time</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Say goodbye to interruptions and enjoy uninterrupted music streaming. With our ad-free platform, you'll have access to millions of songs.
+            Discover our most reviewed and highly rated artworks. Each piece has been carefully curated and appreciated by our community of art enthusiasts.
           </p>
         </div>
 
@@ -21,19 +21,19 @@ export function ArtsSection() {
           <ArtCard
             title="Sense"
             artist="Mark David"
-            listens={129}
+            reviews={129}
             imageSrc="/9.jpeg"
           />
           <ArtCard
             title="Chainsaw Man"
             artist="Alice Blake"
-            views={134}
+            reviews={134}
             imageSrc="/25.jpeg"
           />
           <ArtCard
             title="The Trance"
             artist="Rita Mon Tila"
-            listens={42}
+            reviews={42}
             imageSrc="/20.jpg"
           />
         </div>

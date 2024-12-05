@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Image from 'next/image'
 
 export function HeroSection() {
   return (
@@ -15,7 +16,7 @@ export function HeroSection() {
               <span className="text-gray-400">Limits</span>
             </h1>
             <p className="text-gray-400 text-lg max-w-lg">
-              Say goodbye to interruptions and enjoy uninterrupted music streaming. With our ad-free platform, you'll have access to millions of songs.
+              Say goodbye to interruptions and enjoy uninterrupted music streaming. With our ad-free platform, you&apos;ll have access to millions of songs.
             </p>
             <Button className="bg-[#D81B60] hover:bg-[#C2185B] text-white px-8 py-6 text-lg rounded-md">
               Explore
@@ -24,12 +25,13 @@ export function HeroSection() {
           
           <div className="relative lg:h-[500px] md:h-[400px] h-[300px]">
             <div className="absolute inset-0 rounded-3xl overflow-hidden">
-              <img
+              <Image
                 src="/191.jpeg"
                 alt="Hero Art"
+                width={800}
+                height={500}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/20 " />
             </div>
           </div>
         </div>

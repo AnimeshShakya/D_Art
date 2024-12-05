@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 
 export function AboutSection() {
@@ -30,10 +31,8 @@ export function AboutSection() {
               </span>
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Don't miss out on the latest music news, exclusive offers and
-              promotions. Stay in the loop with the freshest tracks and be the first to know
-              about upcoming releases in the spotlight, plus more. Sign up now
-              and never miss a beat!
+              Don&apos;t miss out on the  exclusive offers and
+              promotions. East or West Bibek's the best!
             </p>
             
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -57,13 +56,14 @@ export function AboutSection() {
             </form>
           </div>
           
-          <div className="relative aspect-square lg:aspect-[4/3] rounded-3xl overflow-hidden">
-            <img
+          <div className="relative h-[400px] w-full">
+            <Image
               src="/111.jpg"
-              alt="About Artist"
-              className="w-full h-full object-cover"
+              alt="About Section Image"
+              width={800}
+              height={400}
+              className="w-full h-full object-cover rounded-2xl"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
           </div>
         </div>
       </div>
