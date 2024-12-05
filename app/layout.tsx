@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import { ClerkProvider } from "@clerk/nextjs"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { CartProvider } from "@/context/cart-context"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -39,11 +40,13 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <div className="flex flex-col min-h-screen">
-            <Navbar />
-            <main className="flex-grow">
-              {children}
-            </main>
-            <Footer />
+            <CartProvider>
+              <Navbar />
+              <main className="flex-grow">
+                {children}
+              </main>
+              <Footer />
+            </CartProvider>
           </div>
         </body>
       </html>

@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Star, X } from "lucide-react"
+import { Star, X, Check } from "lucide-react"
+import { useCart } from "@/context/cart-context"
 
 interface ArtModalProps {
   isOpen: boolean
@@ -24,14 +25,36 @@ interface ArtModalProps {
 
 export function ArtModal({ isOpen, onClose, art }: ArtModalProps) {
   const [quantity, setQuantity] = useState(1)
+  const [showAddedNotification, setShowAddedNotification] = useState(false)
+  const { addItem } = useCart()
 
   if (!isOpen) return null
 
   const totalPrice = art.price * quantity
 
+  const handleAddToCart = () => {
+    addItem({
+      id: art.id,
+      title: art.title,
+      price: art.price,
+      imageUrl: art.imageUrl,
+      quantity
+    })
+    setShowAddedNotification(true)
+    setTimeout(() => setShowAddedNotification(false), 2000)
+  }
+
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
       <div className="bg-gradient-to-b from-gray-900 to-black p-6 rounded-lg max-w-5xl w-full mx-4 relative">
+        {/* Added to Cart Notification */}
+        {showAddedNotification && (
+          <div className="absolute top-4 right-16 bg-green-500 text-white px-4 py-2 rounded-lg flex items-center gap-2 animate-fade-in">
+            <Check className="w-4 h-4" />
+            Added to cart!
+          </div>
+        )}
+
         {/* Close button */}
         <button
           onClick={onClose}
@@ -119,7 +142,10 @@ export function ArtModal({ isOpen, onClose, art }: ArtModalProps) {
                     +
                   </button>
                 </div>
-                <button className="flex-1 bg-white text-black font-semibold py-2 rounded-lg hover:bg-gray-100">
+                <button 
+                  onClick={handleAddToCart}
+                  className="flex-1 bg-white text-black font-semibold py-2 rounded-lg hover:bg-gray-100"
+                >
                   ADD TO CART
                 </button>
                 <button className="flex-1 bg-gradient-to-r from-purple-900 to-blue-900 text-white font-semibold py-2 rounded-lg hover:from-purple-800 hover:to-blue-800">
