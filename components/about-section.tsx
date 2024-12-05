@@ -31,7 +31,7 @@ export function AboutSection() {
               </span>
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Don&apos;t miss out on the  exclusive offers and
+              Don't miss out on the  exclusive offers and
               promotions. East or West Bibek's the best!
             </p>
             
